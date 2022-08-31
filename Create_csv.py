@@ -10,5 +10,5 @@ for i in range(1, no_pages+1):
 
 unpack = lambda l: [item for sublist in l for item in sublist]
 
-df = pd.DataFrame(unpack(results),columns=['Manufacturer','Brand','Model','Price', 'link', 'Shipping'])
+df = pd.DataFrame(unpack(results),columns=['Manufacturer','Brand','Model','Price', 'Shipping', 'Link'])
 df.to_csv('Graphics card price.csv', index=False, encoding='utf-8')

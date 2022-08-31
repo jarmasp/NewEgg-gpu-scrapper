@@ -47,9 +47,9 @@ def check_price(no_pages):
         except:
             allCards.append(0)
 
-        allCards.append(link)
-        
         allCards.append(shipping)
+
+        allCards.append(link)
         
         gfxcards.append(allCards)
 
